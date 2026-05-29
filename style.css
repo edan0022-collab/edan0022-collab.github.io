@@ -1,0 +1,424 @@
+@font-face {
+    font-family:Tomorrow;
+    src:url(fonts/Tomorrow/Tomorrow-Regular.ttf);
+}
+
+@font-face {
+    font-family:TomorrowBold;
+    src:url(fonts/Tomorrow/Tomorrow-Bold.ttf);
+}
+
+/* general*/
+
+body {
+    margin:0;
+    background:#1c1c1c;
+    color:white;
+    font-family:Tomorrow, Arial, sans-serif;
+    overflow-x:hidden;
+    cursor:none;
+}
+
+.site {
+    width:1200px;
+    margin:auto;
+    background:#1c1c1c;
+}
+
+img {
+    width:100%;
+    display:block;
+}
+
+section {
+    padding:60px 15px;
+    box-sizing:border-box;
+}
+
+.grid2 {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+
+
+/* cover */
+
+.cover {
+    height:1800px;
+    display:grid;
+    grid-template-columns:40px 1fr;
+    align-items:start;
+    padding-top:220px;
+    padding-left:45px;
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(28,28,28,0) 0%,
+            rgba(28,28,28,0) 45%,
+            #1c1c1c 100%
+        ),
+        url("images/page1.png");
+
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
+}
+
+
+
+.coverText {
+    margin-top:40px;
+    width:90%;
+    position:relative;
+}
+
+.redLine {
+    width:8px;
+    height:750px;
+    background:#c4382d;
+}
+
+.issue {
+    color:#c4382d;
+    background:#242424;
+    display:inline-block;
+    padding:12px 28px;
+    font-size:22px;
+    position:absolute;
+    right:-60px;
+    top:-60px;
+}
+
+.cover h1 {
+    font-family:TomorrowBold;
+    font-size:160px;
+    line-height:130px;
+    letter-spacing:-7px;
+    margin:0;
+}
+
+/* red words*/
+
+span {
+    color:#c4382d;
+}
+
+
+/* blinking light tagline */
+.tagline {
+    background:#c4382d;
+    color:white;
+    display:inline-block;
+    padding:14px 24px;
+    font-size:32px;
+    animation:flicker 1.2s infinite;
+}
+
+@keyframes flicker {
+    0% {opacity:1;}
+    5% {opacity:0.2;}
+    8% {opacity:1;}
+    12% {opacity:0.1;}
+    15% {opacity:1;}
+    40% {opacity:1;}
+    43% {opacity:0.3;}
+    45% {opacity:1;}
+    100% {opacity:1;}
+}
+
+
+
+/* text */
+h2 {
+    font-family:TomorrowBold;
+    font-size:52px;
+    line-height:58px;
+}
+
+p {
+    font-size:18px;
+    line-height:28px;
+    color:#d6d6d6;
+}
+
+
+
+/* intro */
+.intro {
+    padding-bottom:80px;
+}
+
+.intro h2 {
+    font-size:60px;
+    line-height:65px;
+}
+
+
+/* years */
+.years h2 {
+    font-size:90px;
+}
+
+
+/* navigation */
+.navigation {
+    padding-top:80px;
+}
+
+.navigation h2 {
+    font-size:60px;
+    line-height:65px;
+}
+
+
+
+/* repetition */
+.repetition h2 {
+    font-size:70px;
+    line-height:75px;
+    letter-spacing:-3px;
+}
+
+.boxRed {
+    background:#c4382d;
+    color:white;
+    padding:8px 15px;
+}
+
+.repetition h3 {
+    font-family:TomorrowBold;
+    font-size:80px;
+    line-height:82px;
+    letter-spacing:-3px;
+}
+
+.page9 {
+    margin-top:35px;
+}
+
+
+
+/* ddistinction */
+.distinction {
+    padding-top:10px;
+}
+
+.distinction h2 {
+    font-family:TomorrowBold;
+    font-size:120px;
+    line-height:110px;
+    letter-spacing:-5px;
+    text-decoration:line-through #c4382d 12px;
+}
+
+.bigText {
+    text-decoration:none!important;
+    font-size:80px!important;
+    line-height:85px!important;
+    letter-spacing:-3px!important;
+}
+
+
+/* attention */
+.attention h2 {
+    border-bottom:2px solid #c4382d;
+    padding-bottom:20px;
+}
+
+.attention h3 {
+    font-family:TomorrowBold;
+    font-size:28px;
+}
+
+
+/* screen flicker */
+.screenBlink {
+    animation:screenFlicker 4s infinite;
+}
+
+@keyframes screenFlicker {
+    0% {opacity:1;}
+    40% {opacity:1;}
+    42% {opacity:0.75;}
+    43% {opacity:1;}
+    70% {opacity:1;}
+    72% {opacity:0.85;}
+    73% {opacity:1;}
+    100% {opacity:1;}
+}
+
+
+/* loading */
+.loading {
+    font-family:TomorrowBold;
+    color:#c4382d;
+    font-size:22px;
+    letter-spacing:3px;
+    text-align:center;
+    padding:80px;
+    animation:loadingBlink 1s infinite;
+}
+
+@keyframes loadingBlink {
+    0% {opacity:1;}
+    50% {opacity:0.2;}
+    100% {opacity:1;}
+}
+
+
+/* pop up notification */
+.notification {
+    position:fixed;
+    background:#1c1c1c;
+    border:2px solid #c4382d;
+    color:#c4382d;
+    padding:15px 25px;
+    font-family:TomorrowBold;
+    font-size:14px;
+    letter-spacing:2px;
+    z-index:999;
+    opacity:0;
+    animation:notificationSequence 5s steps(1) infinite;
+}
+
+.one {
+    right:60px;
+    top:200px;
+}
+
+.two {
+    left:80px;
+    bottom:150px;
+    animation-delay:1.7s;
+}
+
+.three {
+    right:120px;
+    bottom:250px;
+    animation-delay:3.4s;
+}
+
+
+@keyframes notificationSequence {
+    0% {
+        opacity:0;
+    }
+
+    /* appears */
+    5% {
+        opacity:1;
+    }
+
+    /* flicker */
+    8% {
+        opacity:0;
+    }
+
+    11% {
+        opacity:1;
+    }
+
+    14% {
+        opacity:0;
+    }
+
+    17% {
+        opacity:1;
+    }
+
+    20% {
+        opacity:0;
+    }
+
+    23% {
+        opacity:1;
+    }
+
+    /* stay visible */
+
+    55% {
+        opacity:1;
+    }
+
+    /* disappear */
+    56% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:0;
+    }
+}
+
+/* cursor red */
+.cursor {
+    width:18px;
+    height:18px;
+    background:#c4382d;
+    border-radius:50%;
+    position:fixed;
+    pointer-events:none;
+    z-index:9999;
+    transform:translate(-50%, -50%);
+    animation:pulseCursor 1s infinite;
+}
+
+@keyframes pulseCursor {
+    0% {
+        opacity:1;
+        transform:translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity:0.5;
+        transform:translate(-50%, -50%) scale(1.6);
+    }
+
+    100% {
+        opacity:1;
+        transform:translate(-50%, -50%) scale(1);
+    }
+}
+
+
+
+/* ending*/
+.ending {
+    padding:20px 15px 0 15px;
+}
+
+.endingTop {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:start;
+    margin-bottom:120px;
+}
+
+.ending h2 {
+    font-size:65px;
+    line-height:70px;
+}
+
+.ending h3 {
+    font-family:TomorrowBold;
+    font-size:48px;
+    line-height:65px;
+    letter-spacing:-2px;
+}
+
+
+/* page14 photo end */
+.ending img {
+    width:100vw;
+    max-width:none;
+    height:auto;
+    margin-left:calc(50% - 50vw);
+    margin-bottom:0;
+}

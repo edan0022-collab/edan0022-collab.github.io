@@ -1,28 +1,262 @@
 <html>
-        <head>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
 
+<head>
+    <title>No-Stop State</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
+<!--tracking cursor-->
+<div class="cursor"></div>
 
+<!--system popups-->>
+<div class="notification one">⚠ ATTENTION RECORDED</div>
+<div class="notification two">⚠ FEED UPDATED</div>
+<div class="notification three">⚠ STILL WATCHING</div>
+<div class="site">
 
+<!--cover-->
+<section class="cover">
+    <div class="redLine"></div>
+    
+    <div class="coverText">
+        <p class="issue">ISSUE 01</p>
+        <h1>
+            NO-<br>
+            <span>STOP</span><br>
+            STATE
+        </h1>
+        <p class="tagline">
+            NO LIMITS · NO CENTRE · NO HIERARCHY · NO EXIT
+        </p>
+    </div>
 
+</section>
 
+<!--intro-->
+<section class="intro grid2">
 
+<div>
+<h2>
+The grid<br>
+Archizoom<br>
+drew in 1969<br>
+has been<br>
+<span>rebuilt.</span>
+</h2>
 
-            <h1>No Stop State</h1>
+<p>
+Not in concrete and steel — in fibre optic cable,
+server farms and notification architecture.
+</p>
+</div>
 
+<img src="images/page3.png">
 
+</section>
 
+<div class="loading">
+SYSTEM UPDATE...<br>
+REBUILDING GRID...
+</div>
 
+<!--years-->
+<section class="years grid2">
 
+<div>
+<img src="images/page4.png">
+<h2>1969.</h2>
+<p>
+A CITY WITH NO LIMITS. NO CENTRE. NO HIERARCHY.
+</p>
+</div>
 
+<div>
+<img src="images/page5.png">
+<h2>
+<span>2026.</span>
 
+</h2>
+<p>
+THE SAME GRID. DIFFERENT ADDRESS.
+</p>
+</div>
 
+</section>
 
+<div class="loading">
+LOADING NEXT FEED...
+</div>
 
+<!--navidation-->
+<section class="navigation grid2">
 
-        </body>
+<div>
+<h2>
+<span>NAVIGATION</span><br>
+IS NO LONGER<br>
+THROUGH A<br>
+PLACE. BUT<br>
+THROUGH<br>
+CONTENT.
+
+</h2>
+<p>
+The scroll replaces the street.
+The feed replaces the city.
+</p>
+
+</div>
+<img class="screenBlink" src="images/page7.png">
+
+</section>
+
+<!-- repetition -->
+<section class="repetition">
+<h2>
+<span class="boxRed">REPETITION</span>
+AS ARCHITECTURE.
+</h2>
+<div class="grid2">
+
+<div>
+<img src="images/page8.png">
+<p>
+The post is the unit.
+Every post occupies an equivalent cell.
+Same rectangle, same engagement counter.
+</p>
+</div>
+
+<div>
+<img class="page9" src="images/page9.png">
+<p>
+War and shopping occupy the same visual container.
+Both become scrollable.
+</p>
+
+<h3>
+ALL THINGS<br>
+COLLAPSE<br>
+<span>INTO ONE.</span>
+</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- distinction -->
+<section class="distinction grid2">
+
+<div>
+<h2>
+DISTINCTION
+</h2>
+
+<img src="images/page10.png">
+</div>
+
+<div>
+<h2 class="bigText">
+NO EDGE<br>
+TO<br>
+<span>REACH.</span>
+</h2>
+
+<p>
+ABSENCE OF EXIT · CONTINUATION · NON ARRIVAL
+</p>
+
+</div>
+
+</section>
+
+<!-- attention -->
+<section class="attention grid2">
+
+    <div>
+
+<img class="screenBlink" src="images/page12.png">
+
+<h3>
+Your gaze is an economic act.
+</h3>
+
+<p>
+Every second your eye rests on a pixel is logged,
+priced and traded.
+</p>
+
+</div>
+
+<div>
+<h2>
+ATTENTION<br>
+AS CURRENCY
+</h2>
+
+<img src="images/page13.png">
+
+</div>
+
+</section>
+
+<div class="loading">
+SEARCHING FOR EXIT...<br>
+FAILED.
+</div>
+
+<!-- end -->
+<section class="ending">
+
+<div class="endingTop">
+
+<div>
+<h2>
+THE<br>
+<span>NO-STOP<br>
+STATE</span><br>
+IS NOT A<br>
+FUTURE.
+</h2>
+
+<p>
+What feels like choice is only progression through a structure that has already been set.
+</p>
+</div>
+
+<div>
+<h3>
+THE SYSTEM CONTINUES<br>
+WITHOUT <span>PAUSE.</span><br>
+WITHOUT <span>EDGE.</span><br>
+WITHOUT <span>RESISTANCE.</span>
+</h3>
+
+<h3>
+THERE IS <span>NO ARRIVAL</span>,<br>
+ONLY CONTINUATION.
+</h3>
+</div>
+
+</div>
+<img src="images/page14.png">
+
+</section>
+</div>
+
+<script>
+let cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", function(e){
+cursor.style.left = e.clientX + "px";
+cursor.style.top = e.clientY + "px";
+
+});
+
+</script>
+
+</body>
+
 </html>
