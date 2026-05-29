@@ -145,6 +145,7 @@ p {
     font-size:18px;
     line-height:28px;
     color:#d6d6d6;
+    text-align:justify;
 }
 
 
@@ -152,6 +153,10 @@ p {
 /* intro */
 .intro {
     padding-bottom:80px;
+}
+
+.intro div {
+    margin-top:-40px;
 }
 
 .intro h2 {
